@@ -61,3 +61,14 @@ func saludo(_ Persona: String){
 }
 saludo("Cleudys")
 
+
+func greet(_ person: String, nice: Bool = true){
+    if nice == true {
+        print("Hola, \(person)!")
+    }else{
+        print("Oh no, no es la persona \(person) intenta de nuevo...")
+    }
+}
+
+greet("MI amor")
+greet("MI amor", nice: true)
